@@ -192,10 +192,9 @@ Select *,
 From PortfolioProject.dbo.NashvilleHousing
 --order by ParcelID
 )
-Select *
-From RowNumCTE
+DELETE FROM RowNumCTE
 Where row_num > 1
-Order by PropertyAddress
+
 
 
 
